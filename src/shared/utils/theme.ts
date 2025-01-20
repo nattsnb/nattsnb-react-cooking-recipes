@@ -152,15 +152,15 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           "& .MuiOutlinedInput-root": {
-            backgroundColor: "#f5ece1", // Set background color
+            backgroundColor: "#f5ece1",
             "&.Mui-disabled": {
-              backgroundColor: "#e7d9c4", // Lighter background for disabled
+              backgroundColor: "#e7d9c4",
             },
             "& fieldset": {
-              borderColor: "#d4c4a8", // Border color for normal state
+              borderColor: "#d4c4a8",
             },
             "&.Mui-focused fieldset": {
-              borderColor: "#4b2e1c", // Border color when focused
+              borderColor: "#4b2e1c",
             },
           },
         },

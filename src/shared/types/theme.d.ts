@@ -2,26 +2,27 @@ import '@mui/material/styles';
 import '@mui/material/Typography';
 import {PropTypes} from "@mui/material";
 import Color = PropTypes.Color;
-import React from "react";
+import React, {CSSProperties} from "react";
 
 type ColorPartial = Partial<Color>;
 
 declare module '@mui/material/styles/createTypography' {
-    interface PaletteColor {
-        subtitle3: React.CSSProperties;
-    }
+
+    type ExtendedCSSProperties = CSSProperties & {
+        [key: string]: any;
+    };
 
     // allow configuration using `createTheme`
     export interface TypographyOptions {
-        pageTittle?: React.CSSProperties;
-        recipesBarTittle?: React.CSSProperties;
-        recipeTittle?: React.CSSProperties;
-        ingredientsTittle?: React.CSSProperties;
-        allergens?: React.CSSProperties;
-        recipeSteps?: React.CSSProperties;
-        stepsCounter?: React.CSSProperties;
-        formSection?: React.CSSProperties;
-        formErrorMessage?: React.CSSProperties;
+        pageTittle?: ExtendedCSSProperties;
+        recipesBarTittle?: ExtendedCSSProperties;
+        recipeTittle?: ExtendedCSSProperties;
+        ingredientsTittle?: ExtendedCSSProperties;
+        allergens?: ExtendedCSSProperties;
+        recipeSteps?: ExtendedCSSProperties;
+        stepsCounter?: ExtendedCSSProperties;
+        formSection?: ExtendedCSSProperties;
+        formErrorMessage?: ExtendedCSSProperties;
     }
 }
 
@@ -46,20 +47,12 @@ declare module '@mui/material/' {
         secondary: Record<number, string>;
     }
 
-    export interface Color {
-        1000: string;
-    }
-
     export interface PaletteColor {
         lightest?: string;
         light?: string;
         main: string;
         dark?: string;
         contrastText?: string;
-    }
-
-    export interface InputBasePropsSizeOverrides {
-        large: true;
     }
 }
 
@@ -72,36 +65,6 @@ declare module '@mui/material/styles' {
         label?: React.CSSProperties;
     }
 
-    interface Theme {
-        variables: {
-            sidebarWidth: string;
-            headerHeight: string;
-            input: {
-                height: Record<string, string | number>;
-                padding: Record<string, string | number>;
-            };
-            button: {
-                height: Record<string, string | number>;
-                padding: Record<string, string | number>;
-                fontSize: Record<string, string | number>;
-            };
-        };
-    }
-    // allow configuration using `createTheme`
-    interface ThemeOptions {
-        variables: {
-            sidebarWidth: string;
-            headerHeight: string;
-            input: {
-                height: Record<string, string | number>;
-                padding: Record<string, string | number>;
-            };
-            button: {
-                height: Record<string, string | number>;
-                fontSize: Record<string, string | number>;
-            };
-        };
-    }
     interface PaletteColorOptions {
         lighter?: string;
         main?: string;
