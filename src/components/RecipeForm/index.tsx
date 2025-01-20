@@ -12,6 +12,8 @@ import {
 interface RecipeFormProps {
   onSaveRecipe: (recipe: Recipe) => void;
   activeRecipe: Recipe | null;
+  recipes: Recipe[] | null,
+  isEditModeOn: boolean,
 }
 
 const emptyRecipe: Recipe = {
@@ -32,7 +34,7 @@ const emptyRecipe: Recipe = {
   photoURL: "",
 };
 
-export function RecipeForm({ onSaveRecipe, activeRecipe }: RecipeFormProps) {
+export function RecipeForm({ onSaveRecipe, recipes, isEditModeOn, activeRecipe }: RecipeFormProps) {
   const recipe = activeRecipe || emptyRecipe;
 
   const {
