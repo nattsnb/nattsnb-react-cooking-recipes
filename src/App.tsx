@@ -137,8 +137,6 @@ function App() {
             {isEditModeOn || !activeRecipe ? (
               <RecipeForm
                 onSaveRecipe={handleSaveRecipe}
-                recipes={recipes}
-                isEditModeOn={isEditModeOn}
                 activeRecipe={activeRecipe}
               />
             ) : (
@@ -154,8 +152,6 @@ function App() {
           {isEditModeOn || !activeRecipe ? (
             <RecipeForm
               onSaveRecipe={handleSaveRecipe}
-              recipes={recipes}
-              isEditModeOn={isEditModeOn}
               activeRecipe={activeRecipe}
             />
           ) : (

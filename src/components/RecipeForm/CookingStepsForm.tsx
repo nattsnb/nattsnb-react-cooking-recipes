@@ -1,10 +1,9 @@
-import { Button, IconButton, TextField } from "@mui/material";
+import { IconButton } from "@mui/material";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-import { Step } from "../../../shared/types/step.ts";
+import { Step } from "../../shared/types/step.ts";
 import {
   StyledFormSectionButton,
   StyledMaxTextField,
-  StyledMediumTextField,
   StyledSmallTextField,
   StyledStepFormContainer,
 } from "./RecipesForm.styled.tsx";
