@@ -19,8 +19,6 @@ declare module '@mui/material/styles/createTypography' {
         recipeTittle?: ExtendedCSSProperties;
         ingredientsTittle?: ExtendedCSSProperties;
         allergens?: ExtendedCSSProperties;
-        recipeSteps?: ExtendedCSSProperties;
-        stepsCounter?: ExtendedCSSProperties;
         formSection?: ExtendedCSSProperties;
         formErrorMessage?: ExtendedCSSProperties;
     }
@@ -34,8 +32,6 @@ declare module '@mui/material/Typography' {
         recipeTittle: true;
         ingredientsTittle: true;
         allergens: true;
-        recipeSteps: true;
-        stepsCounter: true;
         formSection: true;
         formErrorMessage: true;
     }

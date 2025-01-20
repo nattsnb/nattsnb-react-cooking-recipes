@@ -79,60 +79,35 @@ const theme = createTheme({
         fontSize: "12px",
       },
     },
-    recipeSteps: {
-      fontSize: "20px",
-      lineHeight: "30px",
-      fontWeight: 600,
-      fontFamily: `"Poppins", sans-serif`,
-      color: "#2c1b14",
-      "@media (max-width: 480px)": {
-        fontSize: "16px",
-      },
-    },
-    stepsCounter: {
-      fontSize: "20px",
-      lineHeight: "30px",
-      fontWeight: 600,
-      fontFamily: `"Poppins", sans-serif`,
-      color: "#2c1b14",
-      "@media (max-width:  480px)": {
-        fontSize: "16px",
-      },
-    },
-    formSection: {
-      fontSize: "20px",
-      lineHeight: "30px",
-      fontWeight: 600,
-      fontFamily: `"Poppins", sans-serif`,
-      color: "#2c1b14",
-      "@media (max-width:  480px)": {
-        fontSize: "22px",
-      },
-    },
-    formErrorMessage: {
-      fontSize: "12px",
-      lineHeight: "16px",
-      fontFamily: `"Poppins", sans-serif`,
-      color: "#2c1b14",
-      "@media (max-width:  480px)": {
-        fontSize: "10px",
-      },
-    },
     fontFamily: `"Poppins", sans-serif`,
   },
   components: {
     MuiListItemText: {
       styleOverrides: {
-        root: ({ theme }) => ({
-          ...theme.typography.recipeSteps,
-        }),
+        root: {
+          fontSize: "20px",
+          lineHeight: "30px",
+          fontWeight: 600,
+          fontFamily: `"Poppins", sans-serif`,
+          color: "#2c1b14",
+          "@media (max-width: 480px)": {
+            fontSize: "16px",
+          },
+        },
       },
     },
     MuiListItemIcon: {
       styleOverrides: {
-        root: ({ theme }) => ({
-          ...theme.typography.stepsCounter,
-        }),
+        root: {
+          fontSize: "20px",
+          lineHeight: "30px",
+          fontWeight: 600,
+          fontFamily: `"Poppins", sans-serif`,
+          color: "#2c1b14",
+          "@media (max-width: 480px)": {
+            fontSize: "16px",
+          },
+        },
       },
     },
     MuiDivider: {
