@@ -1,6 +1,7 @@
 import { useState } from "react";
+import {Recipe} from "../../shared/types/Recipe.ts";
 
-export const useRecipeForm = (recipe) => {
+export const useRecipeForm = (recipe: Recipe) => {
   const [recipeTitle, setRecipeTitle] = useState(recipe.title);
   const [ingredients, setIngredients] = useState(recipe.ingredients);
   const [cookingSteps, setCookingSteps] = useState(recipe.cookingSteps);
@@ -10,9 +11,9 @@ export const useRecipeForm = (recipe) => {
     const newIngredient = {
       id: lastStep ? lastStep.id + 1 : 1,
       amount: 0,
-      unit: "",
-      name: "",
-      isAllergen: "",
+      unit: null,
+      name: null,
+      isAllergen: null,
     };
     setIngredients([...ingredients, newIngredient]);
   };
