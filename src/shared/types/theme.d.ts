@@ -2,6 +2,7 @@ import '@mui/material/styles';
 import '@mui/material/Typography';
 import {PropTypes} from "@mui/material";
 import Color = PropTypes.Color;
+import React from "react";
 
 type ColorPartial = Partial<Color>;
 
@@ -12,8 +13,15 @@ declare module '@mui/material/styles/createTypography' {
 
     // allow configuration using `createTheme`
     export interface TypographyOptions {
-        subtitle3?: React.CSSProperties;
-        label?: React.CSSProperties;
+        pageTittle?: React.CSSProperties;
+        recipesBarTittle?: React.CSSProperties;
+        recipeTittle?: React.CSSProperties;
+        ingredientsTittle?: React.CSSProperties;
+        allergens?: React.CSSProperties;
+        recipeSteps?: React.CSSProperties;
+        stepsCounter?: React.CSSProperties;
+        formSection?: React.CSSProperties;
+        formErrorMessage?: React.CSSProperties;
     }
 }
 
