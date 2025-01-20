@@ -46,7 +46,7 @@ export function RecipesBar({
         {isViewportSmallerThanMd ? (
           <div>
             <Typography variant="recipesBarTittle">My recipes</Typography>
-            <IconButton onClick={toggleFiltersDrawer(false)}>
+            <IconButton onClick={() => toggleFiltersDrawer && toggleFiltersDrawer(false)}>
               <CloseIcon />
             </IconButton>
           </div>
