@@ -34,12 +34,8 @@ declare module '@mui/material/Typography' {
 
 declare module '@mui/material/' {
     export interface Palette {
-        customGrey: Record<number, string>;
         primary: Record<number, string>;
         secondary: Record<number, string>;
-        green: Record<number, string>;
-        grey: Record<number, string>;
-        yellow: Record<number, string>;
     }
 
     export interface Color {
@@ -47,12 +43,11 @@ declare module '@mui/material/' {
     }
 
     export interface PaletteColor {
-        customGrey: Record<number, string>;
-        primary: Record<number, string>;
-        secondary: Record<number, string>;
-        green: Record<number, string>;
-        grey: Record<number, string>;
-        yellow: Record<number, string>;
+        lightest?: string;
+        light?: string;
+        main: string;
+        dark?: string;
+        contrastText?: string;
     }
 
     export interface InputBasePropsSizeOverrides {
