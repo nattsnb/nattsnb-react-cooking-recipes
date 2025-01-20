@@ -1,7 +1,7 @@
 import { styled } from "@mui/material";
 
 interface StyledImageContainerProps {
-    imageUrl: string;
+  imageUrl: string;
 }
 
 export const StyledImageContainer = styled("div")<StyledImageContainerProps>`
@@ -12,7 +12,7 @@ export const StyledImageContainer = styled("div")<StyledImageContainerProps>`
   background-repeat: no-repeat;
   background-position: center;
   border-radius: ${({ theme }) => theme.spacing(4)}
-  ${({ theme }) => theme.spacing(4)} 0 0;
+    ${({ theme }) => theme.spacing(4)} 0 0;
 
   ${({ theme }) => theme.breakpoints.down("lg")} {
     height: 500px;

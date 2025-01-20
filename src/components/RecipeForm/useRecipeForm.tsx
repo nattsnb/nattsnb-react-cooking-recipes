@@ -1,6 +1,6 @@
 import { useState } from "react";
-import {Recipe} from "../../shared/types/Recipe.ts";
-import {Step} from "../../shared/types/Step.ts";
+import { Recipe } from "../../shared/types/Recipe.ts";
+import { Step } from "../../shared/types/Step.ts";
 
 export const useRecipeForm = (recipe: Recipe) => {
   const [recipeTitle, setRecipeTitle] = useState(recipe.title);
