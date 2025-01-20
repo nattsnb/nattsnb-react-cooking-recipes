@@ -1,5 +1,5 @@
 import { Ingredient } from "./Ingredient";
-import { Step } from "./step.ts";
+import { Step } from "./Step.ts";
 
 export interface Recipe {
   title: string;

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {Recipe} from "../../shared/types/Recipe.ts";
+import {Step} from "../../shared/types/Step.ts";
 
 export const useRecipeForm = (recipe: Recipe) => {
   const [recipeTitle, setRecipeTitle] = useState(recipe.title);
@@ -18,7 +19,7 @@ export const useRecipeForm = (recipe: Recipe) => {
     setIngredients([...ingredients, newIngredient]);
   };
 
-  const onClickDeleteIngredient = (id) => {
+  const onClickDeleteIngredient = (id: number) => {
     const updatedIngredients = ingredients
       .filter((ingredient) => ingredient.id !== id)
       .map((ingredient, index) => ({
@@ -30,9 +31,9 @@ export const useRecipeForm = (recipe: Recipe) => {
 
   const onClickAddStep = () => {
     const lastStep = cookingSteps[cookingSteps.length - 1];
-    const newStep = {
+    const newStep: Step = {
       id: lastStep ? lastStep.id + 1 : 1,
-      value: "",
+      step: null,
     };
     setCookingSteps([...cookingSteps, newStep]);
   };

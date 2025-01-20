@@ -1,6 +1,6 @@
 import { IconButton } from "@mui/material";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-import { Step } from "../../shared/types/step.ts";
+import { Step } from "../../shared/types/Step.ts";
 import {
   StyledFormSectionButton,
   StyledMaxTextField,
