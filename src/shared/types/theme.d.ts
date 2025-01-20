@@ -154,3 +154,9 @@ declare module '@mui/material/styles/createPalette' {
         contrastText?: string;
     }
 }
+
+declare module "@mui/material/Divider" {
+    interface DividerPropsVariantOverrides {
+        custom: true; 
+    }
+}
