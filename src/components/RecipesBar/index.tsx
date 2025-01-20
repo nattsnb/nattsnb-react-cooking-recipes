@@ -23,8 +23,8 @@ import CloseIcon from "@mui/icons-material/Close";
 
 interface RecipesBarProps {
   recipes: Recipe[];
-  handleSetActiveRecipe: (Recipe) => void;
-  deleteRecipe: (string) => void;
+  handleSetActiveRecipe: (recipe: Recipe) => void;
+  deleteRecipe: (title: string) => void;
   deleteAllRecipes: () => void;
   handleAddNewRecipe: () => void;
   toggleFiltersDrawer?: (isOpen: boolean) => void;

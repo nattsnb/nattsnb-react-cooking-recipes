@@ -38,7 +38,7 @@ export const useRecipeForm = (recipe: Recipe) => {
     setCookingSteps([...cookingSteps, newStep]);
   };
 
-  const onClickDeleteStep = (id) => {
+  const onClickDeleteStep = (id: number) => {
     const updatedSteps = cookingSteps
       .filter((step) => step.id !== id)
       .map((step, index) => ({
