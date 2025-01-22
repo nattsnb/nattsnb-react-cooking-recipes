@@ -1,6 +1,10 @@
 import { styled } from "@mui/material";
 
-export const StyledImageContainer = styled("div")`
+interface StyledImageContainerProps {
+  imageUrl: string;
+}
+
+export const StyledImageContainer = styled("div")<StyledImageContainerProps>`
   width: 100%;
   height: 600px;
   background-image: url(${(props) => props.imageUrl});

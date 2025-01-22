@@ -23,8 +23,8 @@ import CloseIcon from "@mui/icons-material/Close";
 
 interface RecipesBarProps {
   recipes: Recipe[];
-  handleSetActiveRecipe: (Recipe) => void;
-  deleteRecipe: (string) => void;
+  handleSetActiveRecipe: (recipe: Recipe) => void;
+  deleteRecipe: (title: string) => void;
   deleteAllRecipes: () => void;
   handleAddNewRecipe: () => void;
   toggleFiltersDrawer?: (isOpen: boolean) => void;
@@ -45,13 +45,15 @@ export function RecipesBar({
       <StyledRecipesBarTittle>
         {isViewportSmallerThanMd ? (
           <div>
-            <Typography variant="recipesBarTittle">My recipes</Typography>
-            <IconButton onClick={toggleFiltersDrawer(false)}>
+            <Typography variant="h2">My recipes</Typography>
+            <IconButton
+              onClick={() => toggleFiltersDrawer && toggleFiltersDrawer(false)}
+            >
               <CloseIcon />
             </IconButton>
           </div>
         ) : (
-          <Typography variant="recipesBarTittle">My recipes</Typography>
+          <Typography variant="h2">My recipes</Typography>
         )}
       </StyledRecipesBarTittle>
       <Divider />

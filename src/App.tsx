@@ -110,7 +110,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <StyledTitle>
-        <Typography variant="pageTittle">The Cook Book</Typography>
+        <Typography variant="h1">The Cook Book</Typography>
       </StyledTitle>
       {isViewportSmallerThanMd ? (
         <div>
@@ -137,8 +137,6 @@ function App() {
             {isEditModeOn || !activeRecipe ? (
               <RecipeForm
                 onSaveRecipe={handleSaveRecipe}
-                recipes={recipes}
-                isEditModeOn={isEditModeOn}
                 activeRecipe={activeRecipe}
               />
             ) : (
@@ -154,8 +152,6 @@ function App() {
           {isEditModeOn || !activeRecipe ? (
             <RecipeForm
               onSaveRecipe={handleSaveRecipe}
-              recipes={recipes}
-              isEditModeOn={isEditModeOn}
               activeRecipe={activeRecipe}
             />
           ) : (

@@ -1,4 +1,4 @@
 export interface Step {
   id: number;
-  step: string;
+  step: string | null;
 }

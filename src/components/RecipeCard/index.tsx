@@ -35,15 +35,15 @@ export function RecipeCard({ recipe, setIsEditModeOn }: RecipeCardProps) {
       />
       <StyledInfoContainer>
         <StyledTitleEditButtonContainer>
-          <Typography variant="recipeTittle">{recipe.title}</Typography>
+          <Typography variant="h3">{recipe.title}</Typography>
           <Button variant="contained" onClick={() => setIsEditModeOn(true)}>
             Edit
           </Button>
         </StyledTitleEditButtonContainer>
-        <Typography variant="allergens">{arrayOfAllergens}</Typography>
+        <Typography variant="errorFont">{arrayOfAllergens}</Typography>
         <div>
           <StyledIngredientsContainer>
-            <Typography variant="ingredientsTittle">Ingredients</Typography>
+            <Typography variant="h4">Ingredients</Typography>
             <List>
               {recipe.ingredients.map((value, index) => (
                 <ListItem key={index}>

@@ -26,7 +26,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    pageTittle: {
+    h1: {
       fontSize: "48px",
       lineHeight: 1.5,
       fontWeight: 600,
@@ -36,7 +36,7 @@ const theme = createTheme({
         fontSize: "32px",
       },
     },
-    recipesBarTittle: {
+    h2: {
       fontSize: "24px",
       lineHeight: 1.5,
       fontWeight: 600,
@@ -48,7 +48,7 @@ const theme = createTheme({
         fontSize: "16px",
       },
     },
-    recipeTittle: {
+    h3: {
       marginRight: "14px",
       fontSize: "32px",
       lineHeight: 1.5,
@@ -59,7 +59,7 @@ const theme = createTheme({
         fontSize: "24px",
       },
     },
-    ingredientsTittle: {
+    h4: {
       fontSize: "24px",
       lineHeight: 1.5,
       fontWeight: 600,
@@ -69,7 +69,7 @@ const theme = createTheme({
         fontSize: "18px",
       },
     },
-    allergens: {
+    errorFont: {
       fontSize: "14px",
       lineHeight: "30px",
       fontWeight: 400,
@@ -79,60 +79,35 @@ const theme = createTheme({
         fontSize: "12px",
       },
     },
-    recipeSteps: {
-      fontSize: "20px",
-      lineHeight: "30px",
-      fontWeight: 600,
-      fontFamily: `"Poppins", sans-serif`,
-      color: "#2c1b14",
-      "@media (max-width: 480px)": {
-        fontSize: "16px",
-      },
-    },
-    stepsCounter: {
-      fontSize: "20px",
-      lineHeight: "30px",
-      fontWeight: 600,
-      fontFamily: `"Poppins", sans-serif`,
-      color: "#2c1b14",
-      "@media (max-width:  480px)": {
-        fontSize: "16px",
-      },
-    },
-    formSection: {
-      fontSize: "20px",
-      lineHeight: "30px",
-      fontWeight: 600,
-      fontFamily: `"Poppins", sans-serif`,
-      color: "#2c1b14",
-      "@media (max-width:  480px)": {
-        fontSize: "22px",
-      },
-    },
-    formErrorMessage: {
-      fontSize: "12px",
-      lineHeight: "16px",
-      fontFamily: `"Poppins", sans-serif`,
-      color: "#2c1b14",
-      "@media (max-width:  480px)": {
-        fontSize: "10px",
-      },
-    },
     fontFamily: `"Poppins", sans-serif`,
   },
   components: {
     MuiListItemText: {
       styleOverrides: {
-        root: ({ theme }) => ({
-          ...theme.typography.recipeSteps,
-        }),
+        root: {
+          fontSize: "20px",
+          lineHeight: "30px",
+          fontWeight: 600,
+          fontFamily: `"Poppins", sans-serif`,
+          color: "#2c1b14",
+          "@media (max-width: 480px)": {
+            fontSize: "16px",
+          },
+        },
       },
     },
     MuiListItemIcon: {
       styleOverrides: {
-        root: ({ theme }) => ({
-          ...theme.typography.stepsCounter,
-        }),
+        root: {
+          fontSize: "20px",
+          lineHeight: "30px",
+          fontWeight: 600,
+          fontFamily: `"Poppins", sans-serif`,
+          color: "#2c1b14",
+          "@media (max-width: 480px)": {
+            fontSize: "16px",
+          },
+        },
       },
     },
     MuiDivider: {
@@ -152,15 +127,15 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           "& .MuiOutlinedInput-root": {
-            backgroundColor: "#f5ece1", // Set background color
+            backgroundColor: "#f5ece1",
             "&.Mui-disabled": {
-              backgroundColor: "#e7d9c4", // Lighter background for disabled
+              backgroundColor: "#e7d9c4",
             },
             "& fieldset": {
-              borderColor: "#d4c4a8", // Border color for normal state
+              borderColor: "#d4c4a8",
             },
             "&.Mui-focused fieldset": {
-              borderColor: "#4b2e1c", // Border color when focused
+              borderColor: "#4b2e1c",
             },
           },
         },

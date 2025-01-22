@@ -1,6 +1,6 @@
-import { Button, IconButton, MenuItem, TextField } from "@mui/material";
+import { IconButton, MenuItem } from "@mui/material";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-import { Ingredient } from "../../../shared/types/Ingredient.ts";
+import { Ingredient } from "../../shared/types/Ingredient.ts";
 import {
   StyledBigTextField,
   StyledFormSectionButton,
