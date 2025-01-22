@@ -3,6 +3,7 @@ import "@mui/material/Typography";
 import { PropTypes } from "@mui/material";
 import Color = PropTypes.Color;
 import React, { CSSProperties } from "react";
+import { ExtendedCSSProperties } from "@mui/material/styles/createTypography";
 
 type ColorPartial = Partial<Color>;
 
@@ -13,26 +14,22 @@ declare module "@mui/material/styles/createTypography" {
 
   // allow configuration using `createTheme`
   export interface TypographyOptions {
-    pageTittle?: ExtendedCSSProperties;
-    recipesBarTittle?: ExtendedCSSProperties;
-    recipeTittle?: ExtendedCSSProperties;
-    ingredientsTittle?: ExtendedCSSProperties;
-    allergens?: ExtendedCSSProperties;
-    formSection?: ExtendedCSSProperties;
-    formErrorMessage?: ExtendedCSSProperties;
+    h1?: ExtendedCSSProperties;
+    h2?: ExtendedCSSProperties;
+    h3?: ExtendedCSSProperties;
+    h4?: ExtendedCSSProperties;
+    errorFont?: ExtendedCSSProperties;
   }
 }
 
 // Update the Typography's variant prop options
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
-    pageTittle: true;
-    recipesBarTittle: true;
-    recipeTittle: true;
-    ingredientsTittle: true;
-    allergens: true;
-    formSection: true;
-    formErrorMessage: true;
+    h1?: true;
+    h2?: true;
+    h3?: true;
+    h4?: true;
+    errorFont?: true;
   }
 }
 

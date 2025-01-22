@@ -62,7 +62,7 @@ export function RecipeForm({ onSaveRecipe, activeRecipe }: RecipeFormProps) {
   return (
     <StyledRecipeCardContainer>
       <StyledFormSectionContainer>
-        <Typography variant="formSection">Recipe title</Typography>
+        <Typography variant="h4">Recipe title</Typography>
         <Divider variant="custom" />
         <TextField
           id="title"
@@ -72,7 +72,7 @@ export function RecipeForm({ onSaveRecipe, activeRecipe }: RecipeFormProps) {
         />
       </StyledFormSectionContainer>
       <StyledFormSectionContainer>
-        <Typography variant="formSection">Ingredients</Typography>
+        <Typography variant="h4">Ingredients</Typography>
         <Divider variant="custom" />
         <IngredientsForm
           ingredients={ingredients}
@@ -82,7 +82,7 @@ export function RecipeForm({ onSaveRecipe, activeRecipe }: RecipeFormProps) {
         />
       </StyledFormSectionContainer>
       <StyledFormSectionContainer>
-        <Typography variant="formSection">Cooking steps</Typography>
+        <Typography variant="h4">Cooking steps</Typography>
         <Divider variant="custom" />
         <CookingStepsForm
           cookingSteps={cookingSteps}
@@ -92,7 +92,7 @@ export function RecipeForm({ onSaveRecipe, activeRecipe }: RecipeFormProps) {
         />
       </StyledFormSectionContainer>
       <StyledFormSectionContainer>
-        <Typography variant="formSection">Photo URL</Typography>
+        <Typography variant="h4">Photo URL</Typography>
         <Divider variant="custom" />
         <TextField
           id="photoURL"

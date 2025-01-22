@@ -110,7 +110,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <StyledTitle>
-        <Typography variant="pageTittle">The Cook Book</Typography>
+        <Typography variant="h1">The Cook Book</Typography>
       </StyledTitle>
       {isViewportSmallerThanMd ? (
         <div>

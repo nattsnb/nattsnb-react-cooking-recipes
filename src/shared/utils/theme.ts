@@ -26,7 +26,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    pageTittle: {
+    h1: {
       fontSize: "48px",
       lineHeight: 1.5,
       fontWeight: 600,
@@ -36,7 +36,7 @@ const theme = createTheme({
         fontSize: "32px",
       },
     },
-    recipesBarTittle: {
+    h2: {
       fontSize: "24px",
       lineHeight: 1.5,
       fontWeight: 600,
@@ -48,7 +48,7 @@ const theme = createTheme({
         fontSize: "16px",
       },
     },
-    recipeTittle: {
+    h3: {
       marginRight: "14px",
       fontSize: "32px",
       lineHeight: 1.5,
@@ -59,7 +59,7 @@ const theme = createTheme({
         fontSize: "24px",
       },
     },
-    ingredientsTittle: {
+    h4: {
       fontSize: "24px",
       lineHeight: 1.5,
       fontWeight: 600,
@@ -69,7 +69,7 @@ const theme = createTheme({
         fontSize: "18px",
       },
     },
-    allergens: {
+    errorFont: {
       fontSize: "14px",
       lineHeight: "30px",
       fontWeight: 400,
